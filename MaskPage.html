@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="indexStyle.css">
+<link rel="stylesheet" type="text/css" href="MaskCSS.css">
+<title> Mask </title>
+</head>
+<body >
+<script>
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+var img = new Image();
+	   
+images[0] = img.src = 'Mask1.jpg';
+images[1] = img.src = 'Mask2.jpg';
+images[2] = img.src = 'Mask3.jpg';
+images[3] = img.src = 'Mask4.jpg';
+images[4] = img.src = 'Mask5.jpg';
+images[5] = img.src = 'Mask6.jpg';
+images[6] = img.src = 'Mask7.jpg';
+
+function changeImg(){
+	document.slide.src = images[i];
+	if(i < images.length - 1){
+	  i++; 
+	} else { 
+		i = 0;
+	}
+	setTimeout("changeImg()", time);
+}
+window.onload=changeImg;
+
+</script>
+<img name="slide" class ="Images" width="700" height="640"  />
+</body>
+</html>

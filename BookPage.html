@@ -1,0 +1,39 @@
+<html><head><title>Books</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="BookCSS.css">
+
+
+
+</head><body>
+<div class="card">
+<a class="textF" href="https://www.penguinrandomhouse.com/the-read-down/the-best-books-for-a-healthy-lifestyle"> DO YOU WANT MORE BOOKS</a>
+</div>
+
+<script>
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+var img = new Image();
+	   
+images[0] = img.src = 'Book1.jpg';
+images[1] = img.src = 'Book2.jpg';
+images[2] = img.src = 'Book3.jpg';
+images[3] = img.src = 'Book4.jpg';
+images[4] = img.src = 'Book5.jpg';
+images[5] = img.src = 'Book6.jpg';
+images[6] = img.src = 'Book7.jpg';
+
+function changeImg(){
+	document.slide.src = images[i];
+	if(i < images.length - 1){
+	  i++; 
+	} else { 
+		i = 0;
+	}
+	setTimeout("changeImg()", time);
+}
+window.onload=changeImg;
+
+</script>
+<img name="slide" class ="Images" width="700" height="640"  />
+</body></html>

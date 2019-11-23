@@ -1,0 +1,40 @@
+body  {
+  background-image: url("BookBG.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.card {
+margin-top:7px;
+margin-left:400px;
+padding-top:10px;
+padding-bottom:10px;
+box-shadow: 0 9px 8px 0 rgba(0,0,0,0.2);
+width: 40%;
+background-color:gray;
+opacity: .7;
+}
+.textF{
+color:red;
+text-shadow:3px 1px gray;
+font-family:Times New Roman;
+font-size:30px ;	
+}
+
+
+}.column {
+  float: left;
+  width: 24%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.Images{
+	
+padding-left:330;
+}
